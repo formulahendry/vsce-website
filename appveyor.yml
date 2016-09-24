@@ -1,0 +1,12 @@
+clone_depth: 5
+
+install:
+  - node --version
+  - npm --version
+  - npm install
+
+build_script:
+  - npm run build
+
+test_script:
+  - npm test
