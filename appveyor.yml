@@ -15,4 +15,4 @@ artifacts:
   - path: build
 
 on_success:
-  - IF %APPVEYOR_REPO_TAG% (echo 0) ELSE (echo 1)
+  - IF %APPVEYOR_REPO_TAG% EQU true (echo 0) ELSE (echo 1)
