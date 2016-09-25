@@ -1,5 +1,9 @@
 clone_depth: 5
 
+environment:
+  access_token:
+    secure: S4XCDPs0BgCq03HYhFt4t/tPOaF5Cujr3BopmxEKEkw5ZdndD1Fd9BN5lGs47V64
+
 install:
   - node --version
   - npm --version
@@ -15,4 +19,12 @@ artifacts:
   - path: build
 
 on_success:
-  - IF %APPVEYOR_REPO_TAG% EQU true (echo 0) ELSE (echo 1)
+  - git config --global credential.helper store
+  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "%GIT_USER_EMAIL%"
+  - git config --global user.name "%GIT_USER_NAME%"
+  - cd build
+  - git init
+  - git remote add origin %STATIC_SITE_REPO%
+  - git add -A
+  - IF %APPVEYOR_REPO_TAG% EQU true (git diff --quiet --exit-code --cached || git commit -m "Update Static Site" && git push origin %TARGET_BRANCH% && appveyor AddMessage "Static Site Updated")

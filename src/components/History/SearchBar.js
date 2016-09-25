@@ -11,7 +11,7 @@ class SearchBar extends Component {
 
   handleChange({refreshChart = false}) {
     if (refreshChart) {
-      window.history.pushState('', null, ReactDOM.findDOMNode(this.refs.itemNameInput).value);
+      window.history.pushState('', null, `#/history/${ReactDOM.findDOMNode(this.refs.itemNameInput).value}`);
     }
     this.props.onUserInput(
       ReactDOM.findDOMNode(this.refs.itemNameInput).value,
