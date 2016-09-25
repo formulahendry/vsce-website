@@ -26,7 +26,7 @@ class SearchBar extends Component {
       <div className="SearchBar">
         <Form horizontal>
           <FormGroup>
-            <Col sm={2} smOffset={4} xs={3} xsOffset={2}>
+            <Col sm={2} smOffset={4} xs={4} xsOffset={1}>
               <ControlLabel>Time</ControlLabel>
               <FormControl componentClass="select" placeholder="select" value={this.props.dateInterval} onChange={() => { this.handleChange({ refreshChart: false }) } } ref="dateIntervalInput">
                 <option value="Hour">Hour</option>
@@ -41,7 +41,7 @@ class SearchBar extends Component {
             </Col>
           </FormGroup>
           <FormGroup>
-            <Col sm={4} smOffset={4} xs={6} xsOffset={2}>
+            <Col sm={4} smOffset={4} xs={7} xsOffset={1}>
               <FormControl type="text" placeholder="Search" value={this.props.itemName} onChange={() => { this.handleChange({ refreshChart: false }) } } ref="itemNameInput"/>
             </Col>
             <Col sm={1} xs={1} id="go">
