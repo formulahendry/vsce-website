@@ -19,7 +19,7 @@ class Chart extends Component {
       xAxis: {
         categories: [],
         title: {
-          text: 'DateTime'
+          text: 'DateTime (UTC)'
         }
       },
       yAxis: {
@@ -50,7 +50,7 @@ class Chart extends Component {
     if (count > 100) {
       return;
     }
-    $.getJSON(`https://vscedownloadcountwebapi.azurewebsites.net/${this.props.itemName}/download-counts?intervalCount=${count + 1}`).done(function (data) {
+    $.getJSON(`https://vscedownloadcountwebapi.azurewebsites.net/${this.props.itemName}/download-counts?dateInterval=${this.props.dateInterval}&intervalCount=${count + 1}`).done(function (data) {
       let result = {
         dateTimes: [],
         downloadCounts: []

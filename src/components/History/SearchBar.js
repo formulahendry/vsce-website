@@ -28,10 +28,11 @@ class SearchBar extends Component {
           <FormGroup>
             <Col sm={2} smOffset={4} xs={4} xsOffset={1}>
               <ControlLabel>Time</ControlLabel>
-              <FormControl componentClass="select" placeholder="select" value={this.props.dateInterval} onChange={() => { this.handleChange({ refreshChart: false }) } } ref="dateIntervalInput">
+              <FormControl componentClass="select" placeholder="select" value={this.props.dateInterval} onChange={() => { this.handleChange({ refreshChart: true }) } } ref="dateIntervalInput">
                 <option value="Hour">Hour</option>
-                <option value="Day" disabled>Day</option>
-                <option value="Week" disabled>Week</option>
+                <option value="Day">Day</option>
+                <option value="Week">Week</option>
+                <option value="Month">Month</option>
               </FormControl>
             </Col>
             <Col sm={2} xs={3}>
