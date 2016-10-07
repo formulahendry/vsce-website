@@ -1,0 +1,81 @@
+.Extension .extension-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.Extension .col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Extension .extension-card {
+    height: 215px;
+    margin-top: 10%;
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Extension .extension-card:hover {
+    box-shadow: 2px 2px 20px rgba(0, 0, 100, 0.6);
+}
+
+.Extension .extension-icon-container {
+    height: 100px
+}
+
+.Extension img {
+    margin-top: 16px;
+    max-width: 100%;
+    max-height: 72px;
+    height: auto;
+}
+
+.Extension .extension-display-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.Extension .extension-publisher-name {
+    color: #767676;
+    font-size: 12px;
+}
+
+.Extension .extension-install {
+    margin-top: 8px;
+}
+
+.Extension .install-count {
+    margin-left: 6px;
+}
+
+.Extension .extension-rating {
+    margin-top: 0px;
+}
+
+.Extension .average-rating {
+    margin-left: 6px;
+}
+
+@media (max-width: 1080px) {
+    .Extension .extension-card {
+        height: 170px;
+    }
+    .Extension .extension-icon-container {
+        height: 80px
+    }
+    .Extension img {
+        margin-top: 10px;
+        max-height: 60px;
+    }
+    .Extension .extension-display-name {
+        font-size: 10px;
+    }
+    .Extension .extension-publisher-name {
+        font-size: 9px;
+    }
+    .Extension {
+        font-size: 10px;
+    }
+}

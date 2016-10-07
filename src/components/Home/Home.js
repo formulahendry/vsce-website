@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
+import Extension from './Extension';
 import extensions from '../../assets/extensions.json'
 
 class Home extends Component {
+  constructor() {
+    super();
+    this.aaa = ["formulahendry.code-runner","formulahendry.auto-close-tag"];
+  }
+
   render() {
     return (
       <div className="Home">
@@ -11,9 +16,7 @@ class Home extends Component {
           Not see your extension? Send a PR <a href="https://github.com/formulahendry/vsce-website/blob/master/src/assets/extensions.json">here</a>, or submit a <a href="https://github.com/formulahendry/vsce-website/issues">request</a>.
         </p>
         {extensions.map((extension, index) =>
-          <div key={extension}>
-            <Link to={`/history/${extension}`}>{extension}</Link>
-          </div>
+          <Extension itemName={extension} key={index}/>  
         )}
       </div>
     );
