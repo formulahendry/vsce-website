@@ -12,9 +12,11 @@ class Home extends Component {
     return (
       <div className="Home">
         <h1>Extensions List</h1>
-        <p>
-          Not see your extension? Send a PR <a href="https://github.com/formulahendry/vsce-website/blob/master/src/assets/extensions.json">here</a>, or submit a <a href="https://github.com/formulahendry/vsce-website/issues">request</a>.
-        </p>
+        {(navigator.userAgent.indexOf('Code/') === -1) &&
+          <p>
+            Not see your extension? Send a PR <a href="https://github.com/formulahendry/vsce-website/blob/master/src/assets/extensions.json">here</a>, or submit a <a href="https://github.com/formulahendry/vsce-website/issues">request</a>.
+          </p>
+        }
         {extensions.map((extension, index) =>
           <Extension itemName={extension} key={index}/>  
         )}

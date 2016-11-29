@@ -21,11 +21,13 @@
         ga('send', 'pageview');
 
         // AddThis Widget
-        var script = document.createElement('script');
-        script.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57e679eabcef18e0';
-        script.type = 'text/javascript';
-        script.async = true;
-        document.getElementsByTagName('body')[0].appendChild(script);
+        if (navigator.userAgent.indexOf('Code/') === -1) {
+          var script = document.createElement('script');
+          script.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57e679eabcef18e0';
+          script.type = 'text/javascript';
+          script.async = true;
+          document.getElementsByTagName('body')[0].appendChild(script);
+        }
       };
     </script>
   </body>
