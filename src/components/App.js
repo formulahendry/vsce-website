@@ -26,6 +26,9 @@ class App extends Component {
               <IndexLinkContainer to="/leaderboard">
                 <NavItem eventKey={3}>Leaderboard</NavItem>
               </IndexLinkContainer>
+              <IndexLinkContainer to="/marketplace">
+                <NavItem eventKey={4}>Marketplace</NavItem>
+              </IndexLinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
