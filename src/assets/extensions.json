@@ -60,5 +60,14 @@
     "TwentyChung.jsx",
     "hars.CppSnippets",
     "HvyIndustries.crane",
-    "Pendrica.Chef"
+    "Pendrica.Chef",
+    "PeterJausovec.vscode-docker",
+    "redhat.java",
+    "ecmel.vscode-html-css",
+    "PKief.material-icon-theme",
+    "felixfbecker.php-intellisense",
+    "akamud.vscode-theme-onedark",
+    "emmanuelbeziat.vscode-great-icons",
+    "christian-kohler.path-intellisense",
+    "christian-kohler.npm-intellisense"
 ]
