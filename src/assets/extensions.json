@@ -7,6 +7,7 @@
     "formulahendry.azure-iot-toolkit",
     "formulahendry.iot-extension-pack",
     "formulahendry.platformio",
+    "vsciot-vscode.vscode-arduino",
     "steveyin.arduino-vscode",
     "moozzyk.Arduino",
     "ms-vscode.csharp",
