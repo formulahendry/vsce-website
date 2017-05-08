@@ -53,9 +53,11 @@ class Chart extends Component {
       return;
     }
     $.getJSON(`https://vscedownloadcountwebapi.azurewebsites.net/${this.props.itemName}/download-counts?dateInterval=${this.props.dateInterval}&intervalCount=${count + 1}`).done((data) => {
-      this.setState({
-        isLoading: false
-      });
+      if(this.state.isLoading) {
+        this.setState({
+          isLoading: false
+        });
+      }
       let result = {
         dateTimes: [],
         downloadCounts: []
