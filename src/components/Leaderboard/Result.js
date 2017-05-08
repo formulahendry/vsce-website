@@ -8,7 +8,8 @@ class Result extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: this.getLeaderboardData()
+      result: this.getLeaderboardData(),
+      isLoading: true
     };
   }
 
@@ -21,7 +22,8 @@ class Result extends Component {
   getLeaderboardData() {
     $.getJSON(`https://vscedownloadcountwebapi.azurewebsites.net/leaderboard?timeRange=${this.props.timeRange}`).done((data) => {
       this.setState({
-        result: data
+        result: data,
+        isLoading: false
       });
     });
   }
@@ -47,6 +49,9 @@ class Result extends Component {
     }
     return (
       <div className="Result">
+        {this.state.isLoading &&
+          <div className="loader"></div>
+        }
         <Row className="Header">
           <Col sm={3} smOffset={2} xs={4}>
             Extension

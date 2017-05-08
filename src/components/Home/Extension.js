@@ -40,6 +40,7 @@ class Extension extends Component {
         this.setState({
           extensionData: data
         });
+        this.props.updateLoadStatus(false);
       });
   }
 

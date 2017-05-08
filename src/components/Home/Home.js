@@ -5,7 +5,16 @@ import extensions from '../../assets/extensions.json'
 class Home extends Component {
   constructor() {
     super();
-    this.aaa = ["formulahendry.code-runner","formulahendry.auto-close-tag"];
+    this.state = {
+      isLoading: true
+    }
+    this.updateLoadStatus = this.updateLoadStatus.bind(this);
+  }
+
+  updateLoadStatus(isLoading) {
+    this.setState({
+      isLoading: isLoading
+    })
   }
 
   render() {
@@ -17,8 +26,11 @@ class Home extends Component {
             Not see your extension? Send a PR <a href="https://github.com/formulahendry/vsce-website/blob/master/src/assets/extensions.json">here</a>, or submit a <a href="https://github.com/formulahendry/vsce-website/issues">request</a>.
           </p>
         }
+        {this.state.isLoading &&
+          <div className="loader"></div>
+        }
         {extensions.map((extension, index) =>
-          <Extension itemName={extension} key={index}/>  
+          <Extension itemName={extension} key={index} updateLoadStatus={this.updateLoadStatus}/>  
         )}
       </div>
     );

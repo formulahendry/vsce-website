@@ -32,6 +32,9 @@ class Chart extends Component {
         data: []
       }]
     }
+    this.state = {
+      isLoading: true
+    }
   }
 
   componentDidMount() {
@@ -45,12 +48,14 @@ class Chart extends Component {
   }
 
   getHistoryData() {
-    let chart = this.refs.chart.getChart();
     let count = parseInt(this.props.intervalCount, 10);
     if (count > 100) {
       return;
     }
-    $.getJSON(`https://vscedownloadcountwebapi.azurewebsites.net/${this.props.itemName}/download-counts?dateInterval=${this.props.dateInterval}&intervalCount=${count + 1}`).done(function (data) {
+    $.getJSON(`https://vscedownloadcountwebapi.azurewebsites.net/${this.props.itemName}/download-counts?dateInterval=${this.props.dateInterval}&intervalCount=${count + 1}`).done((data) => {
+      this.setState({
+        isLoading: false
+      });
       let result = {
         dateTimes: [],
         downloadCounts: []
@@ -62,20 +67,26 @@ class Chart extends Component {
           result.downloadCounts.push(count)
         }
       });
+      let chart = this.refs.chart.getChart();
       if(!chart.series)
       {
         return;
-      }
+      }      
       chart.series[0].setData(result.downloadCounts);
       chart.xAxis[0].update({
           categories: result.dateTimes
-      });
+      });  
     });
   }
 
   render() {
     return (
-      <ReactHighcharts config={this.config} ref="chart" />
+      <div>
+        {this.state.isLoading &&
+          <div className="loader"></div>
+        }
+        <ReactHighcharts config={this.config} ref="chart" />
+      </div>
     );
   }
 }
