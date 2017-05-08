@@ -8,6 +8,7 @@
     "formulahendry.iot-extension-pack",
     "formulahendry.platformio",
     "vsciot-vscode.vscode-arduino",
+    "Zim.vsc-docker",
     "steveyin.arduino-vscode",
     "moozzyk.Arduino",
     "ms-vscode.csharp",
