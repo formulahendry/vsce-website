@@ -20,7 +20,7 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <h1>Extensions List</h1>
+        <h1>Popular Extensions</h1>
         {(navigator.userAgent.indexOf('Code/') === -1) &&
           <p>
             Not see your extension? Send a PR <a href="https://github.com/formulahendry/vsce-website/blob/master/src/assets/extensions.json">here</a>, or submit a <a href="https://github.com/formulahendry/vsce-website/issues">request</a>.
