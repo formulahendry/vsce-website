@@ -87,6 +87,7 @@ class Chart extends Component {
         {this.state.isLoading &&
           <div className="loader"></div>
         }
+        <a href={`https://marketplace.visualstudio.com/items?itemName=${this.props.itemName}`} target="_blank">View more in Marketplace</a>
         <ReactHighcharts config={this.config} ref="chart" />
       </div>
     );
