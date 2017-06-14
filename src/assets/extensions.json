@@ -6,6 +6,7 @@
     "formulahendry.auto-complete-tag",
     "formulahendry.azure-iot-toolkit",
     "formulahendry.iot-extension-pack",
+    "formulahendry.docker-explorer",
     "formulahendry.platformio",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
