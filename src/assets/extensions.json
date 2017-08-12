@@ -8,6 +8,7 @@
     "formulahendry.iot-extension-pack",
     "formulahendry.docker-explorer",
     "formulahendry.docker-extension-pack",
+    "formulahendry.dotnet-test-explorer",
     "formulahendry.platformio",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
