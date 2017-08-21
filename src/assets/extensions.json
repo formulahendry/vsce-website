@@ -9,6 +9,7 @@
     "formulahendry.docker-extension-pack",
     "formulahendry.dotnet-test-explorer",
     "formulahendry.platformio",
+    "vsciot-vscode.azure-iot-toolkit",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
     "Zim.vsc-docker",
