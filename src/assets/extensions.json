@@ -4,7 +4,6 @@
     "formulahendry.auto-rename-tag",
     "formulahendry.terminal",
     "formulahendry.auto-complete-tag",
-    "formulahendry.azure-iot-toolkit",
     "formulahendry.iot-extension-pack",
     "formulahendry.docker-explorer",
     "formulahendry.docker-extension-pack",
@@ -77,5 +76,6 @@
     "akamud.vscode-theme-onedark",
     "emmanuelbeziat.vscode-great-icons",
     "christian-kohler.path-intellisense",
-    "christian-kohler.npm-intellisense"
+    "christian-kohler.npm-intellisense",
+    "formulahendry.azure-iot-toolkit"
 ]
