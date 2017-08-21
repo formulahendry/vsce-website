@@ -9,6 +9,7 @@
     "formulahendry.docker-extension-pack",
     "formulahendry.dotnet-test-explorer",
     "formulahendry.platformio",
+    "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
@@ -77,6 +78,5 @@
     "akamud.vscode-theme-onedark",
     "emmanuelbeziat.vscode-great-icons",
     "christian-kohler.path-intellisense",
-    "christian-kohler.npm-intellisense",
-    "formulahendry.azure-iot-toolkit"
+    "christian-kohler.npm-intellisense"
 ]
