@@ -12,6 +12,7 @@
     "formulahendry.azure-storage-explorer",
     "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
+    "ms-vscode.vscode-azureextensionpack",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
     "Zim.vsc-docker",
