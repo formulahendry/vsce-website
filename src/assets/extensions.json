@@ -9,6 +9,7 @@
     "formulahendry.docker-extension-pack",
     "formulahendry.dotnet-test-explorer",
     "formulahendry.platformio",
+    "formulahendry.azure-storage-explorer",
     "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
     "platformio.platformio-ide",
