@@ -10,6 +10,7 @@
     "formulahendry.dotnet-test-explorer",
     "formulahendry.platformio",
     "formulahendry.azure-storage-explorer",
+    "formulahendry.azure-virtual-machine-explorer",
     "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
     "ms-vscode.vscode-azureextensionpack",
