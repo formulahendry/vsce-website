@@ -13,6 +13,7 @@
     "formulahendry.azure-virtual-machine-explorer",
     "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
+    "vsciot-vscode.azure-iot-edge",
     "ms-vscode.vscode-azureextensionpack",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
