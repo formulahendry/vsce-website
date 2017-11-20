@@ -11,6 +11,7 @@
     "formulahendry.platformio",
     "formulahendry.azure-storage-explorer",
     "formulahendry.azure-virtual-machine-explorer",
+    "formulahendry.dotnet",
     "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-edge",
