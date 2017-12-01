@@ -84,5 +84,6 @@
     "akamud.vscode-theme-onedark",
     "emmanuelbeziat.vscode-great-icons",
     "christian-kohler.path-intellisense",
-    "christian-kohler.npm-intellisense"
+    "christian-kohler.npm-intellisense",
+    "johnstoncode.svn-scm"
 ]
