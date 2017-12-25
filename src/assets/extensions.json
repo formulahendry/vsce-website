@@ -18,6 +18,7 @@
     "vsciot-vscode.azure-iot-edge",
     "vscjava.vscode-java-debug",
     "vscjava.vscode-java-test",
+    "vscoss.vscode-ansible",
     "ms-vscode.vscode-azureextensionpack",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
