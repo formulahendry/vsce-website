@@ -89,5 +89,6 @@
     "christian-kohler.path-intellisense",
     "christian-kohler.npm-intellisense",
     "johnstoncode.svn-scm",
-    "bmewburn.vscode-intelephense-client"
+    "bmewburn.vscode-intelephense-client",
+    "WSO2.Ballerina"
 ]
