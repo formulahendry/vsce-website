@@ -90,5 +90,6 @@
     "christian-kohler.npm-intellisense",
     "johnstoncode.svn-scm",
     "bmewburn.vscode-intelephense-client",
-    "WSO2.Ballerina"
+    "WSO2.Ballerina",
+    "jansenfuller.crayon-vscode"
 ]
