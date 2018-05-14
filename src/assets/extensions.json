@@ -17,6 +17,7 @@
     "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-edge",
+    "vsciot-vscode.vscode-iot-workbench",
     "vscjava.vscode-java-debug",
     "vscjava.vscode-java-test",
     "vscoss.vscode-ansible",
