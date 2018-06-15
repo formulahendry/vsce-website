@@ -48,11 +48,15 @@ class Extension extends Component {
     let extensionData;
     if (this.state.extensionData) {
       let install = 0;
+      let updateCount = 0;
       let averagerating = 0;
       let statistics = this.state.extensionData.results[0].extensions[0].statistics
       for (let index in statistics) {
         if (statistics[index].statisticName === 'install') {
           install = statistics[index].value;
+        }
+        if (statistics[index].statisticName === 'updateCount') {
+          updateCount = statistics[index].value;
         }
         if (statistics[index].statisticName === 'averagerating') {
           averagerating = statistics[index].value.toFixed(2);
@@ -80,7 +84,7 @@ class Extension extends Component {
               </div>
               <div className="extension-display-name">{this.state.extensionData.results[0].extensions[0].displayName}</div>
               <div className="extension-publisher-name">{this.state.extensionData.results[0].extensions[0].publisher.displayName}</div>
-              <div className="extension-install"><Glyphicon glyph="cloud-download" /><span className="install-count">{install}</span></div>
+              <div className="extension-install"><Glyphicon glyph="cloud-download" /><span className="install-count">{install+updateCount}</span></div>
               <div className="extension-rating"><Glyphicon glyph="star" /><span className="average-rating">{averagerating}</span></div>
             </Link>
           </div>  
