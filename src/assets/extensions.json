@@ -24,6 +24,7 @@
     "ms-vscode.vscode-azureextensionpack",
     "platformio.platformio-ide",
     "vsciot-vscode.vscode-arduino",
+    "CodeStream.codestream",
     "Zim.vsc-docker",
     "steveyin.arduino-vscode",
     "moozzyk.Arduino",
