@@ -108,5 +108,7 @@
     "camel-tooling.vscode-apache-camel",
     "EdgardMessias.clipboard-manager",
     "plibither8.remove-comments",
-    "greenrover.hibernate-log-analyser"
+    "greenrover.hibernate-log-analyser",
+    "uloco.theme-bluloco-dark",
+    "uloco.theme-bluloco-light"
 ]
