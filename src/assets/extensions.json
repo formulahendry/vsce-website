@@ -14,6 +14,7 @@
     "formulahendry.dotnet",
     "formulahendry.vscode-mysql",
     "formulahendry.vscode-node-red",
+    "formulahendry.ycy",
     "formulahendry.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-toolkit",
     "vsciot-vscode.azure-iot-edge",
