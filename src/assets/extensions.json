@@ -122,5 +122,11 @@
     "runnerup.super-encourager",
     "sinchang.packagelinker",
     "kddejong.vscode-cfn-lint",
-    "nhoizey.gremlins"
+    "nhoizey.gremlins",
+    "Sumanta.vuejs-developer-extension-pack",
+    "Sumanta.reactjs-developer-extension-pack",
+    "Sumanta.python-developer-extension-pack",
+    "Sumanta.nodejs-developer-extension-pack",
+    "Sumanta.javascript-mastermind-snippets",
+    "Sumanta.bunjs-developer-extension-pack"
 ]
