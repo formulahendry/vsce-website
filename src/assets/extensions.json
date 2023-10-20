@@ -128,5 +128,6 @@
     "Sumanta.python-developer-extension-pack",
     "Sumanta.nodejs-developer-extension-pack",
     "Sumanta.javascript-mastermind-snippets",
-    "Sumanta.bunjs-developer-extension-pack"
+    "Sumanta.bunjs-developer-extension-pack",
+    "JakeBecker.elixir-ls"
 ]
